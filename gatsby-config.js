@@ -3,9 +3,17 @@ module.exports = {
     title: 'Gatsby Default Starter'
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages'
+      }
+    },
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-react-helmet',
-    'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-netlify-cms'
+    'gatsby-transformer-remark',
+    'gatsby-transformer-sharp'
   ]
 };
