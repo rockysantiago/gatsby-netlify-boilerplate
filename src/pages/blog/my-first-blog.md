@@ -1,5 +1,5 @@
 ---
-path: my-first-blog
+path: /blog/my-first-blog
 date: 2018-09-13T06:31:50.945Z
 title: My First Blog
 ---
